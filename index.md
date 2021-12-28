@@ -3,6 +3,26 @@ layout: page
 title: Home
 ---
 
+<style>
+    body {
+        background-color: #1D1D1F !important;
+        color: #F5F5F7 !important;
+    }
+
+    a {
+        color: #2997FF !important;
+    }
+
+    h1 {
+        border-bottom: none !important;
+        margin-bottom: 0px !important;
+    }
+
+    h2 {
+        border-bottom: 1px solid #6E6E73 !important;
+    }
+</style>
+
 Senior Software Engineer - iOS at Affirm.<br />
 British Columbia, Canada.
 
