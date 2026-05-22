@@ -1,0 +1,141 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time>
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
+
+<a href="{{ '/blog' | relative_url }}" class="back-to-blog">&larr; Back to Blog</a>
+
+<style>
+  .post {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 6rem 2rem 4rem;
+  }
+
+  .post-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #3A3A3C;
+  }
+
+  .post-meta {
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    color: #6E6E73;
+    font-weight: 500;
+  }
+
+  .post-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    color: #F5F5F7;
+  }
+
+  .post-content {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #A1A1A6;
+  }
+
+  .post-content p {
+    margin-bottom: 1.5rem;
+  }
+
+  .post-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #F5F5F7;
+    margin: 2.5rem 0 1rem;
+    letter-spacing: -0.02em;
+  }
+
+  .post-content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #F5F5F7;
+    margin: 2rem 0 0.75rem;
+  }
+
+  .post-content a {
+    color: #2997FF;
+    text-decoration: underline;
+  }
+
+  .post-content code {
+    background: #2C2C2E;
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-family: 'SF Mono', SFMono-Regular, ui-monospace, monospace;
+  }
+
+  .post-content pre {
+    background: #2C2C2E;
+    padding: 1.25rem;
+    border-radius: 12px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+
+  .post-content pre code {
+    background: none;
+    padding: 0;
+  }
+
+  .post-content blockquote {
+    border-left: 3px solid #2997FF;
+    padding-left: 1.25rem;
+    margin: 1.5rem 0;
+    color: #A1A1A6;
+    font-style: italic;
+  }
+
+  .post-content ul, .post-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .post-content li {
+    margin-bottom: 0.5rem;
+  }
+
+  .post-content img {
+    border-radius: 12px;
+    margin: 1.5rem 0;
+  }
+
+  .back-to-blog {
+    display: inline-block;
+    margin: 0 2rem;
+    padding: 0.75rem 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #A1A1A6;
+  }
+
+  .back-to-blog:hover {
+    color: #2997FF;
+  }
+
+  @media (max-width: 768px) {
+    .post {
+      padding: calc(56px + 2rem) 1.25rem 3rem;
+    }
+    .post-title {
+      font-size: 1.75rem;
+    }
+  }
+</style>
