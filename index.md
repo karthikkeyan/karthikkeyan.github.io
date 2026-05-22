@@ -37,7 +37,7 @@ title: Karthikkeyan Bala Sundaram - Portfolio
   </div>
   <div class="about-grid fade-in">
     <div class="about-photo">
-      <div class="photo-placeholder">&#x1F464;</div>
+      <img src="/img/prof_pic.jpg" alt="Karthikkeyan Bala Sundaram">
     </div>
     <div class="about-content">
       <p>
